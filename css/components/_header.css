@@ -52,13 +52,13 @@
   text-transform: uppercase;
 }
 
-.burger{
+.burger {
   width: 48px;
   height: 10px;
   position: relative;
 }
 
-.burger__line{
+.burger__line {
   width: 100%;
   height: 2px;
   background-color: var(--white-color);
@@ -68,7 +68,15 @@
   top: 0;
 }
 
-.burger__line:last-child{
+.burger__line:last-child {
   top: auto;
   bottom: 0;
+}
+
+
+@media (max-height: 1079px) {
+  .header__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
