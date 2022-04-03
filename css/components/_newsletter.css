@@ -1,0 +1,84 @@
+.newsletter {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.newsletter__content {
+  --newsletter-gap: 130px;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 var(--newsletter-gap);
+  padding-top: 330px;
+  padding-bottom: 180px;
+}
+
+.newsletter__text {
+  max-width: 355px;
+}
+
+.newsletter__title {
+  margin-bottom: 40px;
+  color: var(--white-color);
+}
+
+.newsletter__description {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.newsletter__form {
+  position: absolute;
+  bottom: -100px;
+  right: var(--newsletter-gap);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--white-color);
+  width: 500px;
+  height: 415px;
+  border-radius: 8px;
+  padding-top: 76px;
+}
+
+.subscribe-form__field {
+  width: calc(100% - (72px * 2));
+  border: none;
+  border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+  outline: transparent;
+  padding: 25px 0;
+  padding-left: 20px;
+}
+
+.subscribe-form__field::placeholder {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--dark-color);
+}
+
+.subscribe__btn {
+  width: 100%;
+  background-color: var(--neptune-color);
+  color: var(--white-color);
+  padding-top: 41px;
+  padding-bottom: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 66px;
+}
