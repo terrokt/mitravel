@@ -1,0 +1,136 @@
+.inspiration {
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+
+.inspiration__title {
+  margin-bottom: 24px;
+}
+
+.inspiration__description {
+  font-family: 'SFCompact', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #788692;
+  max-width: 634px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.galery {
+  display: grid;
+  grid-auto-rows: minmax(500px, auto);
+  grid-gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galery__btn{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 64px;
+  height: 64px;
+  background-image: url(/img/play.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+
+}
+
+.galery__item {
+  position: relative;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.galery__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.647277) 100%);
+}
+
+.galery__item--big {
+  grid-column-end: span 2;
+}
+
+.galery__item--bigheight {
+  height: 700px;
+}
+
+.galery__item--1 {
+  background-image: url(/img/inspiration-1.jpg);
+}
+
+.galery__item--2 {
+  background-image: url(/img/inspiration-2.jpg);
+}
+
+.galery__item--3 {
+  background-image: url(/img/inspiration-3.jpg);
+}
+
+.galery__item--4 {
+  background-image: url(/img/inspiration-4.jpg);
+}
+
+.galery__item--5 {
+  background-image: url(/img/inspiration-5.jpg);
+}
+
+.galery__item--6 {
+  background-image: url(/img/inspiration-6.jpg);
+}
+
+.galery__item--7 {
+  background-image: url(/img/inspiration-7.jpg);
+}
+
+.galery__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.galery__link {
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 8px;
+}
+
+.galery__title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.galery__users {
+  display: flex;
+}
+
+.galery__users-item {
+  border-radius: 100%;
+  overflow: hidden;
+  font-size: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.galery__users-item:not(:last-child){
+  margin-right: -20px;
+}
