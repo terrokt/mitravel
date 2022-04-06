@@ -47,6 +47,12 @@
   padding: 33px 78px;
   display: inline-block;
   border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.blog-article__link:hover{
+  background-color: var(--neptune-hover-color);
+  transition: background-color 0.3s;
 }
 
 .fetured-article__title {

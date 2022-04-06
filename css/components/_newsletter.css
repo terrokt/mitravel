@@ -81,4 +81,11 @@
   font-size: 12px;
   letter-spacing: 2px;
   margin-top: 66px;
+  transition: background-color 0.3s;
+}
+
+.subscribe__btn:hover{
+  background-color: var(--neptune-hover-color);
+  transition: background-color 0.3s;
+
 }

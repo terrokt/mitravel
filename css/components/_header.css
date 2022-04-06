@@ -24,6 +24,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: opacity 0.3s;
+}
+
+.social__link:hover{
+  opacity: 0.6;
+  transition: opacity 0.3s;
 }
 
 .social__link--fb {
@@ -56,6 +62,12 @@
   width: 48px;
   height: 10px;
   position: relative;
+  
+}
+
+.burger:hover .burger__line{
+  background-color: var(--orange-color);
+  transition: background-color 0.3s;
 }
 
 .burger__line {
@@ -66,6 +78,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  transition: background-color 0.3s;
 }
 
 .burger__line:last-child {
@@ -79,4 +92,71 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -150vw;
+  width: 100%;
+  height: 100%;
+  background-color: var(--neptune-color);
+  z-index: 1000;
+  transition: left 0.3s;
+
+}
+
+.menu--visible{
+  transition: left 0.3s;
+  left: 0;
+}
+.menu__close {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+}
+
+.menu__close-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white-color);
+}
+
+.menu__close-line:first-child{
+  transform: rotate(45deg);
+}
+.menu__close-line:last-child{
+  transform: rotate(-45deg);
+}
+.menu__nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.menu__list {
+  text-align: center;
+}
+.menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.menu__link {
+  font-size: 35px;
+  color: var(--white-color);
+  transition: color 0.3s;
+}
+
+.menu__link:hover{
+  color: var(--dark-color);
+  transition: color 0.3s;
 }

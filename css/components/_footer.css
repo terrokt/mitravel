@@ -38,6 +38,13 @@
   font-weight: 500;
   font-size: 13px;
   color: #959EA6;
+  transition: color 0.3s;
+}
+
+
+.footer__link:hover{
+  color: #666e75;
+  transition: color 0.3s;
 }
 
 .footer__form {
@@ -69,6 +76,13 @@
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.footer__btn:hover{
+  background-color: var(--neptune-hover-color);
+  transition: background-color 0.3s;
+
 }
 
 .footer__bottom {

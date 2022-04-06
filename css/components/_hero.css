@@ -43,6 +43,12 @@
   border-radius: 8px;
   position: relative;
   z-index: 5;
+  transition: background-color 0.3s;
+}
+
+.hero__btn:hover {
+  background-color: var(--orange-hover-color);
+  transition: background-color 0.3s;
 }
 
 
