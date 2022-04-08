@@ -1,0 +1,25 @@
+@media (max-width: 1500px){
+  .featured__stories{
+    padding: 80px 60px;
+  }
+}
+@media (max-width: 1200px){
+  .become__title{
+    max-width: 80%;
+  }
+  .become__text{
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .featured__stories{
+    width: 45%;
+  }
+
+  .blog-article {
+    width: 500px;
+}
+@media (max-width: 992px){}
+@media (max-width: 768px){}
+@media (max-width: 576px){}
+@media (max-width: 375px){}

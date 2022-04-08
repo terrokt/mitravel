@@ -125,6 +125,23 @@
   letter-spacing: 2px;
 }
 
+.main__slider-media{
+  position: relative;
+}
+
+.main-slider__play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 32px;
+  height: 40px;
+  background-image: url(/img/hero-play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-height: 1079){
   .hero__container{
     padding: 120px 30px;
